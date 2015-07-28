@@ -1,0 +1,125 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\setmainfont{Times New Roman}
+\setCJKmainfont[BoldFont=Songti SC Bold]{Songti SC Regular}
+\setCJKsansfont{Heiti SC Medium}
+\setCJKmonofont{Courier}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip=0pt plus 1pt minus 0.1pt
+
+
+\name{朱泽龙} % Your name
+\address{手机: 18022308628  \hspace{4ex} \texttt{email: zhuzelong@me.com}} % Your phone number and email
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{教育经历}
+
+\begin{rSubsection}{The University of Manchester}{2014-09 -- 2015-09}{}{}
+    \item 硕士学位: MSc in Advanced Computer Science 
+    \item 主修课程: 机器学习，高级数据库管理，数据工程，高维数据视图化，自动化推理，组合优化及规划
+    \item 毕业项目: 为Bibliotheca公司提供数据分析
+\end{rSubsection}
+
+\begin{rSubsection}{中央财经大学}{2007-09 -- 2011-06}{}{}  
+    \item 本科学位: 管理学学士 (专业: 信息管理与信息系统)
+    \item 成绩: 3.5/4.5, 排名: 2/29
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{工作经历}
+
+\begin{rSubsection}{广发银行总行信息技术部}{2011-07 -- 2014-02}{}{}
+\item 供应商管理: 为行内业务系统寻找合适的硬件、系统软件、外包开发及维护供应商；管理供应商信息及产品目录；协助参与制定采购策略
+\item 项目规划: 协调业务部门与开发部门并参与制定项目计划；参与审核项目可行性研究报告，负责审核项目产品选择及预算
+\item 产品选型: 组织业务部门与开发部门进行新产品选型，参与审核选型报告
+\end{rSubsection}
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%   PROJECT EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+\begin{rSection}{项目经验}
+\begin{rSubsection}{Bibliotheca 数据挖掘}{2015-02 -- 2015-09}{}{}
+\item 使用MSSQL抽取及转换交易型数据
+\item 使用Python及Google Maps API进行反向地理编码、聚类分析， 用朴素贝叶斯模型预测等待概率
+\item 使用R进行数据清洗、探索性分析及线性回归预测
+\item 使用Rnw及R Markdown编写报告，为Bibliotheca公司提供数据分析模型及报告
+\end{rSubsection}
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{技能}
+
+%\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+%Computer Languages & Prolog, Haskell, AWK, Erlang, Scheme, ML \\
+%Protocols \& APIs & XML, JSON, SOAP, REST \\
+%Databases & MySQL, PostgreSQL, Microsoft SQL \\
+%Tools & SVN, Vim, Emacs
+%\end{tabular}
+\begin{rSubsection}{}{}{}{}
+\item {Python:} 熟悉Python 2.7（通过公开课及官方文档自学），使用numpy及pandas进行数据转换，使用scikit-learn进行机器学习分析；可使用正则表达式和Python处理文本
+\item {R:} 熟悉R，使用data.table及ggplot2等工具包进行数据分析；熟练使用R Markdown及Rnw编写数据分析报告；具备统计学基础；
+\item {MS SQL Server:} 熟练编写SQL语句进行数据查询及转换
+\item {Git:} 熟练使用命令行工具操作Git，使用Github托管作业及毕业项目代码
+% \end{rSubsection}
+
+% \begin{rSubsection}{其他技能}{}{}{}
+\item {\LaTeX:} 熟练使用\LaTeX{}进行写作  
+\item{英语:} IELTS 7.5，可进行流利的口语沟通及商务邮件写作
+\end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{目标职位}
+\item 数据挖掘，自然语言处理及机器学习
+\item 期望工作地点：深圳，广州
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
