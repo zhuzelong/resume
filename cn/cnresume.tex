@@ -23,18 +23,19 @@
 \documentclass{resume} % Use the custom resume.cls style
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
-\usepackage{fontspec}
-\usepackage{xeCJK}
-\setmainfont{Times New Roman}
-\setCJKmainfont[BoldFont=Songti SC Bold]{Songti SC Regular}
-\setCJKsansfont{Heiti SC Medium}
-\setCJKmonofont{Courier}
-\XeTeXlinebreaklocale "zh"
-\XeTeXlinebreakskip=0pt plus 1pt minus 0.1pt
+\usepackage{ctex}
+% \usepackage{fontspec}
+% \usepackage{xeCJK}
+% \setmainfont{Times New Roman}
+% \setCJKmainfont[BoldFont=Songti SC Bold]{Songti SC Regular}
+% \setCJKsansfont{Heiti SC Medium}
+% \setCJKmonofont{Courier}
+% \XeTeXlinebreaklocale "zh"
+% \XeTeXlinebreakskip=0pt plus 1pt minus 0.1pt
 
 
 \name{朱泽龙} % Your name
-\address{手机: 18022308628  \hspace{4ex} \texttt{email: zhuzelong@me.com}} % Your phone number and email
+\address{手机: 18022308628  \hspace{4ex} email: zhuzelong@me.com} % Your phone number and email
 
 \begin{document}
 
@@ -44,15 +45,12 @@
 
 \begin{rSection}{教育经历}
 
-\begin{rSubsection}{The University of Manchester}{2014-09 -- 2015-09}{}{}
-    \item 硕士学位: MSc in Advanced Computer Science 
-    \item 主修课程: 机器学习，高级数据库管理，数据工程，高维数据视图化，自动化推理，组合优化及规划
-    \item 毕业项目: 为Bibliotheca公司提供数据分析
+\begin{rSubsection}{The University of Manchester}{2014-09 至今}{}{}
+    \item 硕士学位: MSc in Advanced Computer Science Knowledge Management （数据分析方向）
 \end{rSubsection}
 
-\begin{rSubsection}{中央财经大学}{2007-09 -- 2011-06}{}{}  
-    \item 本科学位: 管理学学士 (专业: 信息管理与信息系统)
-    \item 成绩: 3.5/4.5, 排名: 2/29
+\begin{rSubsection}{中央财经大学}{2007-09 -- 2011-06}{}{}
+    \item 本科学位: 信息管理与信息系统 (排名 2/29)
 \end{rSubsection}
 
 \end{rSection}
@@ -64,9 +62,10 @@
 \begin{rSection}{工作经历}
 
 \begin{rSubsection}{广发银行总行信息技术部}{2011-07 -- 2014-02}{}{}
-\item 供应商管理: 为行内业务系统寻找合适的硬件、系统软件、外包开发及维护供应商；管理供应商信息及产品目录；协助参与制定采购策略
-\item 项目规划: 协调业务部门与开发部门并参与制定项目计划；参与审核项目可行性研究报告，负责审核项目产品选择及预算
-\item 产品选型: 组织业务部门与开发部门进行新产品选型，参与审核选型报告
+\item 为行内业务系统寻找IT供应商，协助参与制定采购策略
+\item 管理供应商信息及产品目录
+\item 参与IT系统建设项目的可行性研究报告审核，负责产品选择及预算部分
+\item 组织业务部门与开发部门进行软、硬件产品选型
 \end{rSubsection}
 
 \end{rSection}
@@ -76,11 +75,18 @@
 %   PROJECT EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 \begin{rSection}{项目经验}
-\begin{rSubsection}{Bibliotheca 数据挖掘}{2015-02 -- 2015-09}{}{}
-\item 使用MSSQL抽取及转换交易型数据
-\item 使用Python及Google Maps API进行反向地理编码、聚类分析， 用朴素贝叶斯模型预测等待概率
-\item 使用R进行数据清洗、探索性分析及线性回归预测
-\item 使用Rnw及R Markdown编写报告，为Bibliotheca公司提供数据分析模型及报告
+\begin{rSubsection}{Bibliotheca公司数据挖掘}{2015-02 -- 2015-09}{}{}
+\item 独立对Bibliotheca公司一千余家图书馆过往5年的交易数据进行分析，为该公司提供分析报告。
+\item 使用MSSQL和R清洗数据及预处理；
+\item 借助Google API和Python对图书馆进行反向地理编码；
+\item 使用R进行探索性数据分析，对交易数据进行时间序列分析及预测；
+\item 使用Python对图书馆聚类分析，使用分类预测模型分析等待服务的时长；根据论文使用Python实现了XMeans聚类算法、非监督型特征选择算法；
+\item 为该公司编写分析报告，该报告同时作为研究生毕业论文。
+
+% \item 使用MSSQL抽取及转换交易型数据
+% \item 使用Python及Google Maps API进行反向地理编码、聚类分析， 用朴素贝叶斯模型预测等待概率
+% \item 使用R进行数据清洗、探索性分析及线性回归预测
+% \item 使用Rnw及R Markdown编写报告，为Bibliotheca公司提供数据分析模型及报告
 \end{rSubsection}
 \end{rSection}
 
@@ -98,15 +104,12 @@
 %Tools & SVN, Vim, Emacs
 %\end{tabular}
 \begin{rSubsection}{}{}{}{}
-\item {Python:} 熟悉Python 2.7（通过公开课及官方文档自学），使用numpy及pandas进行数据转换，使用scikit-learn进行机器学习分析；可使用正则表达式和Python处理文本
-\item {R:} 熟悉R，使用data.table及ggplot2等工具包进行数据分析；熟练使用R Markdown及Rnw编写数据分析报告；具备统计学基础；
-\item {MS SQL Server:} 熟练编写SQL语句进行数据查询及转换
-\item {Git:} 熟练使用命令行工具操作Git，使用Github托管作业及毕业项目代码
-% \end{rSubsection}
-
-% \begin{rSubsection}{其他技能}{}{}{}
-\item {\LaTeX:} 熟练使用\LaTeX{}进行写作  
-\item{英语:} IELTS 7.5，可进行流利的口语沟通及商务邮件写作
+\item {Python:} 熟练使用Python进行数据分析及实现算法；
+\item {R:} 熟练使用R进行数据分析，使用Rnw编写数据分析报告，具备统计学基础；
+\item {SQL:} 熟练编写SQL语句进行数据查询及转换
+\item {Git:} 熟练使用Git，使用Github管理研究生期间作业及毕业项目；
+\item {\LaTeX:} 熟练使用\LaTeX{}写作；
+\item{英语:} IELTS 7.5，具备中等口语沟通及写作能力，平时通过阅读英文文档及教材、查阅StackOverflow自学。
 \end{rSubsection}
 
 \end{rSection}
@@ -115,10 +118,10 @@
 %	EXAMPLE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{目标职位}
-\item 数据挖掘，自然语言处理及机器学习
-\item 期望工作地点：深圳，广州
-\end{rSection}
+% \begin{rSection}{目标职位}
+% \item 数据挖掘，自然语言处理及机器学习
+% \item 期望工作地点：深圳，广州
+% \end{rSection}
 
 %----------------------------------------------------------------------------------------
 
